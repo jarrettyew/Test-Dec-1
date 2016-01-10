@@ -1,3 +1,6 @@
 <h4><%= @link.title %></h4><br>
-<%= @link.url %><br>
-<%= @link.image %><br>
+<% if @link.image? %>
+	<img src="<%= @link.url %>">
+<% else %>
+	<%= @link.url %><br>
+<% end %>
