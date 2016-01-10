@@ -1,0 +1,11 @@
+<div class="container">
+
+	<h1>List</h1>
+
+	<ul>
+		<% @link.each do |l| %>
+		<li><%= link_to "#{l.title}", "/links/#{l.id}"%></li>
+		<% end %>
+	</ul>
+
+</div>
