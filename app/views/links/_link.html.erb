@@ -1,6 +1,5 @@
-<h4><%= @link.title %></h4><br>
-<% if @link.image? %>
-	<img src="<%= @link.url %>">
+<% if link.image? %>
+	<img src="<%= link.url %>">
 <% else %>
-	<%= @link.url %><br>
+	<li><%= link_to link.title, link.url %>  <a href="links/<%= link.id %>">view</a></li>
 <% end %>

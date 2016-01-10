@@ -4,7 +4,7 @@
 
 	<ul>
 		<% @links.each do |link| %>
-		<li><%= link_to link.title, link.url %>  <a href="links/<%= link.id %>">view</a></li>
+			<li><%= link_to link.title, link.url %>  <a href="links/<%= link.id %>">view</a></li>
 		<button>upvote</button> <button>downvote</button>
 		<% end %>
 	</ul>
