@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :phones
+  resources :links
   # resources :links, only: [:show, :new, :create] do
   #   resource :upvote, only: [:create]
   #   resource :downvote, only: [:create]
@@ -10,8 +11,6 @@ Rails.application.routes.draw do
   #     resources :links, only: [:index, :create]
   #   end
   # end
-
-  resources :links
 
   root to: "links#index"
 end
