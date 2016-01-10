@@ -1,6 +1,6 @@
 <div class="container">
 
-	<h1>List</h1>
+	<h1>Listing links</h1>
 
 	<ul>
 		<% @links.each do |link| %>
@@ -10,3 +10,5 @@
 	</ul>
 
 </div>
+
+<%= link_to 'New Link', new_link_path %>

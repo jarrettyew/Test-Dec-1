@@ -2,7 +2,7 @@ class Link < ActiveRecord::Base
 validates :title, presence: :true
 validates :url, presence: :true
 has_many :scores
-
+# before_create :image?
 	
 
 	def upvote
