@@ -3,8 +3,9 @@
 	<h1>List</h1>
 
 	<ul>
-		<% @link.each do |l| %>
-		<li><%= link_to "#{l.title}", "/links/#{l.id}"%></li>
+		<% @links.each do |link| %>
+		<li><%= link_to link.title %></li>
+		<button>upvote</button> <button>downvote</button>
 		<% end %>
 	</ul>
 
