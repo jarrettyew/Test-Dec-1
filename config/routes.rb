@@ -9,8 +9,6 @@ Rails.application.routes.draw do
       resources :links, only: [:index, :create]
     end
   end
-
-  get "/new", to: "new_links#index", as: "new_links"
-
+  
   root to: "links#index"
 end
