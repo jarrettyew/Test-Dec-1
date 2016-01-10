@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :phones
   # resources :links, only: [:show, :new, :create] do
   #   resource :upvote, only: [:create]
   #   resource :downvote, only: [:create]

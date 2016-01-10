@@ -1,27 +1,5 @@
-<div class="container">
-	<h1>Create a new link</h1>
+<h1>New Link</h1>
 
-	<%= form_for :link do |f| %>
+<%= render 'form' %>
 
-	<div>
-		<h6> Link Title: </h6>
-		<%= f.text_field :title, :placeholder => "Be clear and descriptive" %>
-	</div>
-	
-	<div>
-		<h6> Url: </h6>
-	<%= f.text_field :url, :placeholder => "the damn url,please" %>
-	</div>
-
-	<div>
-		<h6>Upload your image</h6>
-   	<%= f.file_field :image, multiple: true %>
-	</div>
-	<div>
-		<%= f.submit "submit" %>
-	</div>
-	<% end %>
-</div>
-
-
-
+<%= link_to 'Back', links_path %>

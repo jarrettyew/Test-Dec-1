@@ -1,0 +1,21 @@
+<%= form_for(@link) do |f| %>
+  <div>
+    <h6> Link Title: </h6>
+    <%= f.text_field :title, :placeholder => "Be clear and descriptive" %>
+  </div>
+  
+  <div>
+    <h6> Url: </h6>
+  <%= f.text_field :url, :placeholder => "the damn url,please" %>
+  </div>
+
+  <div>
+    <h6>Upload your image</h6>
+    <%= f.file_field :image, multiple: true %>
+  </div>
+  <div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
